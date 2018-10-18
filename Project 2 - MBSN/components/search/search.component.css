@@ -1,0 +1,24 @@
+#artist-img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+#fake-link {
+    font-weight: normal;
+    color: rgb(0, 102, 255);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#highlighted-link{
+    font-weight: bold;
+    color: rgb(29,185,84);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#x-text{
+    color: red;
+    margin-left: 2px;
+}

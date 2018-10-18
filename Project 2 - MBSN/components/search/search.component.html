@@ -1,0 +1,40 @@
+<p class="text-left">Search for an artist</p>
+
+<form>
+
+  <div class="form-group">
+    <input type="text" name="searchStr"  [(ngModel)]="searchStr" (keyup)="searchMusic()" class="form-control" placeholder="Search">
+  </div>
+</form>
+
+<div *ngIf="selectedGenres">
+  <div *ngFor="let genre of selectedGenres">
+    <div *ngIf="genre" id="{{genre}}">
+      <span >{{genre}}</span>
+      <span id="x-text" (click)="removeGenre($event)">x</span>
+      <br>
+    </div>
+    <!-- <ul *ngIf="genre" id="{{genre}}" class="list-group">
+      <li class="list-group-item">{{genre}} <span id="x-text" (click)="removeGenre($event)">x</span></li>
+    </ul> -->
+  </div>
+  <hr>
+</div>
+
+<div *ngIf="searchRes">
+  <div *ngFor="let res of searchRes">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="search-res well">
+          <img id="artist-img" src={{res.images[0].url}}/>
+          <h4 >{{res.name}}</h4>
+          <div>
+            <strong>Genres: </strong>
+            <span id="fake-link" (click)="selectGenre($event)" *ngFor="let genre of res.genres">{{genre}}<br></span>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

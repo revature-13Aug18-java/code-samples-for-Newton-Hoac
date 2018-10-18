@@ -1,0 +1,112 @@
+*{
+    color: white;
+}
+
+img{
+    object-fit: cover;
+}
+
+.round {
+    color: black;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px #000 solid;
+    padding: 5px 5px 5px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.corner {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 20px;
+    width: 20px;
+    z-index: 10;
+    border-radius: 10px;
+    border: none;
+    background: #000; /* Set the bg image here. with "no-repeat" */
+}
+
+.search {
+    position: relative;
+    width: 100%;
+    height: 30px;
+}
+
+#nav-bar{
+    background-color: rgb(29,185,84);
+}
+
+#base{
+    display: flex;
+    width: 100vw;
+    margin-top: 10px;
+}
+
+#search-bar{
+    width: 25%;
+    position: relative;
+    left: -2%;
+}
+
+#search-results{
+    width: 50%;
+}
+
+/* SEARCH RESULTS */
+#search-results-list{
+    border-color: rgb(10, 10, 10);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+#search-result-unit{
+    margin-top: 10px;
+    display: flex;
+    justify-content: left;
+    transition: all .2s ease-in-out; 
+}
+
+#search-prof-pic-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search-prof-pic{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    margin: 0px 5px 5px 5px;
+    transition: all .2s ease-in-out; 
+}
+
+#search-handle{
+    width: 4rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+#search-text-container{
+    border-style: solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 60%;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#search-text{
+    color: white;
+}
+
+#search-buttons-container{
+    margin-top: 10%;
+}

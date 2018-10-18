@@ -1,0 +1,53 @@
+<div id="main-profile">
+<div class="container" id="base">
+  <!-- LEFT COLUMN -->
+  <!-- Profile Picture makes get request to /edit -->
+  <div class="container" id="left-col">
+    <a href="/edit">
+      <img id="prof-pic" src="{{currUser.pictureUrl}}">
+    </a>
+    <p id="prof-username">{{currUser.firstName}} {{currUser.lastName}}</p>
+    <p id="prof-aboutMe">{{currUser.aboutMe}}</p>
+  </div>
+
+  <!-- CENTER COLUMN -->
+  <!-- Profile picture should be linked to that user's profile -->
+  <div class="container" id="center-col">
+    <h4 id="center-label">Activity</h4>
+    <div id="post-timeline" *ngFor="let post of posts">
+      <div id="post-unit">
+        <!-- PROFILE PIC -->
+        <a id="post-prof-pic-link" href="">
+          <img id="post-prof-pic" src="{{post.prof_pic}}">
+          <figcaption id="post-handle">{{post.handle}}</figcaption>
+        </a>
+        <!-- TEXT BODY -->
+        <div id="post-text-container">
+          <span id="post-text">{{post.text}}</span>
+          <span *ngIf="post.likes" id="post-likes">Likes: {{post.likes}}</span>
+        </div>
+        <!-- SIDE BUTTONS -->
+        <div id="post-buttons-container">
+          <button class="btn btn-success" id="post-buttons">✓</button>
+          <br>
+          <button class="btn btn-danger" id="post-buttons" (click)="hidePost()">X</button>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+  
+  <!-- RIGHT COLUMN -->
+  <!-- Whole element links to that user's profile -->
+  <div class="container" id="right-col">
+    <h4 id="right-label">Friends</h4>
+    <div id="friends-list" *ngFor="let friend of friends">
+      <!--  -->
+      <a id="friend-unit" href="">
+        <img id="friend-prof-pic" src={{friend.prof_pic}}>
+        <span id="friend-name">{{friend.handle}}</span>
+      </a>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,31 @@
+<div class="container" id="base">
+  <div id="search-bar">
+    <form id="search-form">
+        <div class="search">
+          <input type="text" name="searchStr" [(ngModel)]="searchStr" class="round" (keyup)="searchUsers()"/>
+          <input type="submit" class="corner" value="" />
+        </div>
+    </form>
+  </div>
+  <div id="search-results">
+    <div id="search-results-list">
+      <div id="search-result-unit" *ngFor="let friend of searchResults">
+        <!-- PROFILE PIC -->
+        <a id="search-prof-pic-link" href="">
+          <img id="search-prof-pic" src="{{friend.pictureUrl}}">
+          <figcaption id="search-handle">{{friend.firstName}} {{friend.lastName}}</figcaption>
+        </a>
+        <!-- TEXT BODY -->
+        <!-- SHOULD LIST ABOUT ME -->
+        <div id="search-text-container">
+          <span id="search-text">{{friend.aboutMe}}</span>
+        </div>
+        <!-- SIDE BUTTONS -->
+        <div id="search-buttons-container" class="{{friend.id}}">
+          <button class="btn btn-success" id="search-buttons" (click)="addFriend($event)">+</button>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>

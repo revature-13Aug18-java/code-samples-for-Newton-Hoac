@@ -1,0 +1,51 @@
+
+<div id="main">
+  <br>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<br>
+<div class="container" id="container">
+<div class="row">
+<div class="container text-center col-md-6" id="loginContainer">
+<h1 id="loginHeader"> Sign in</h1>
+<!-- Use ngSubmit to run checkLogin() on submit -->
+<!-- checkLogin will manage credential checking w/ DB and routing -->
+<form [formGroup]="loginForm" (ngSubmit)="checkLogin()">
+  <div class="form-group text-left">
+    <label for="emailAddress">Email address</label>
+    <input type="email" formControlName="emailAddress" class="form-control" id="emailInput"/>
+    <div>
+    </div>
+  </div>
+
+
+  <div class="form-group text-left">
+    <label for="password">Password</label>
+    <input type="password" formControlName="password" class="form-control" id="passwordInput"/>
+    <div>
+    </div>
+  </div>
+
+  <input class="btn btn-primary" type="submit" value="Sign in">
+
+</form>
+<br>
+<a href="/register" id="registerLink">
+<div>
+  Not registered? Create an account.
+</div>
+</a>
+</div>
+
+<div class="container text-left col-md-6" id="about-text">
+<div id="home-subheader">
+    <h2>Your music, your matches</h2>
+</div>
+<div id="home-subheader-body">
+<p>MBSN connects and matches you with people in your area based on your music taste using Spotify's Web API and proprietary matching technology.</p>
+</div>
+
+</div>
+</div>
+
+</div>
