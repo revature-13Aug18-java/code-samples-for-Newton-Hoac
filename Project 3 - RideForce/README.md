@@ -11,7 +11,7 @@
 * Account active state
 * Edit profile
 
-	Technology stack
+### Technology stack
 * Java
 * Spring
 * JUnit
