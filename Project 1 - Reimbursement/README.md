@@ -7,11 +7,12 @@
 * Java
 * Servlets
 * JDBC
-* Oracle DB
+* AWS RDS
 * PL/SQL
 * HTML
 * CSS
 * Javascript
+* Bootstrap
 * AJAX
 * JUnit
 * log4j

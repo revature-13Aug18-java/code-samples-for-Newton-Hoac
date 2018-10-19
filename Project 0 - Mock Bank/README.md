@@ -8,6 +8,6 @@
 * JDBC
 * log4j
 * JUnit
-* Oracle DB
+* AWS RDS
 * PL/SQL
 * SonarCloud
