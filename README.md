@@ -4,7 +4,7 @@
 
 ### Project 1 - Expense Reimbursement System
 
-   The Expense Reimbursement System is a web application that enables employees to submit and managers to handle reimbursements. Users are represented by their profiles which they can edit following login.
+   The Expense Reimbursement System is a web application that enables employees to submit and managers to handle reimbursements. Users are represented by their profiles which can be edited after login.
 
 ### Project 2 - MBSN
 
