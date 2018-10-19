@@ -1,3 +1,17 @@
 ## Expense Reimbursement System
 
-   implementing Servlets, HTML/CSS, & Javascript for the frontend and JDBC for the backend. Users make HTTPrequests through the methods provided by HTML and generated using AJAX in Javascript. Servlets process these requests and handle them accordingly.
+   This folder contains the code snippets from Project 1 - Expense Reimbursement System. This project implements Servlets, HTML/CSS, & Javascript for the frontend and JDBC for the backend. 
+   Users make HTTPRequests through the methods provided by HTML views and generated using AJAX in Javascript. Servlets process these requests and handle them accordingly. 
+   
+   Technology stack
+* Java
+* Servlets
+* JDBC
+* Oracle DB
+* PL/SQL
+* HTML
+* CSS
+* Javascript
+* AJAX
+* JUnit
+* log4j
