@@ -19,4 +19,4 @@
 
    Rideforce is a full-stack web application created to address the issue of carpooling to and from Revature. It utilizes Angular for its frontend, Spring for its backend, and Jenkins for its development pipeline. The backend is structured using Netflix's microservice model.
 
-   [User Service](https://github.com/revaturelabs/rideshare-user-service)
+   [User Service](https://github.com/nhoac001/rideforce-user-service)
