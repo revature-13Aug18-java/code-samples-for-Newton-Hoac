@@ -1,3 +1,0 @@
-josh.pen 15
-user 165
-newton 0
