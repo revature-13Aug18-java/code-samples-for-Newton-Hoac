@@ -8,6 +8,7 @@
 ### Technology stack
 * Java
 * JDBC
+* log4j
 * AWS RDS
 * PL/SQL
 * SonarCloud
