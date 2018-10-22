@@ -9,6 +9,7 @@
 * Java
 * JDBC
 * log4j
+* JUnit
 * AWS RDS
 * PL/SQL
 * SonarCloud
