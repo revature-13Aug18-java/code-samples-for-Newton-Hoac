@@ -8,7 +8,6 @@
 ### Technology stack
 * Java
 * JDBC
-* JUnit
 * AWS RDS
 * PL/SQL
 * SonarCloud
